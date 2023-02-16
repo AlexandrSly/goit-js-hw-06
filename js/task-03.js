@@ -19,7 +19,7 @@ console.log(ulEl);
 const imgGallery = images
   .map(
     (image) =>
-      `<li><img  srs="${image.url}" alt="${image.alt}" width ="320"></li>`
+      `<li><img srс="${image.url}" alt="${image.alt}" width="320"></li>`
   )
   .join("");
 
@@ -31,5 +31,4 @@ const imgEl = document.querySelector(".img");
 
 ulEl.style.listStyleType = "none";
 ulEl.style.display = "flex";
-// imgEl.style.flexWrap = "wrap";
 ulEl.style.justifyContent = "center";

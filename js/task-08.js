@@ -7,7 +7,11 @@ loginFormEl.addEventListener("submit", (e) => {
   } = e.currentTarget;
 
   if (email.value !== "" && password.value !== "") {
-    console.log(`email: ${email.value}, password: ${password.value}`);
+    const authentication = {
+      email: email.value,
+      password: password.value,
+    };
+    console.log(authentication);
     loginFormEl.reset();
   } else {
     alert("все поля должны быть заполнены");
