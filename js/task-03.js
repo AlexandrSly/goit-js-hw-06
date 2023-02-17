@@ -15,20 +15,20 @@ const images = [
 
 const ulEl = document.querySelector(".gallery");
 
-console.log(ulEl);
+// console.log(ulEl);
 const imgGallery = images
   .map(
     (image) =>
-      `<li><img srс="${image.url}" alt="${image.alt}" width="320"></li>`
+      `<li><img  src="${image.url}" alt="${image.alt}" width="200"/></li>`
   )
   .join("");
 
-console.log(imgGallery);
-
 ulEl.insertAdjacentHTML("afterbegin", imgGallery);
 
-const imgEl = document.querySelector(".img");
-
 ulEl.style.listStyleType = "none";
-ulEl.style.display = "flex";
+// ulEl.style.display = "flex";
 ulEl.style.justifyContent = "center";
+ulEl.style.gap = "30px";
+ulEl.style.padding = "25px";
+ulEl.style.alignItems = "center";
+// ulEl.style.border = "1px solid blue";
